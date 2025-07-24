@@ -1,0 +1,12 @@
+login changes:
+
+Edit the background to have the Frutiger aero background x
+Change font to IBM Plex Sans JPx
+change the text thingy (spacing)x
+The text boxes need editing
+tick box and remember me
+make the photo a little larger
+add the password view icon
+Maybe add a moving background 
+Footer editing
+change "welcome back" to be more down

@@ -1,0 +1,430 @@
+/* Login panel border and background */
+.login-panel {
+  width: 460px;
+  background: #e2eeffcc;
+  border: 2px solid #c0c8d7;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.07);
+  box-sizing: border-box;
+  padding: 10px 24px 24px 1px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+/* Center login-form and style input fields */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 50vw;
+  min-width: 400px;
+  background: #ffffffd4;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.08), 0 0 0 3px #b3d1ff;
+  z-index: 2;
+  position: relative;
+  border: 2.5px solid #b3d1ff;
+  border-radius: 18px;
+  box-sizing: border-box;
+}
+
+.input-group {
+  width: 350px;
+  margin-bottom: 16px;
+}
+
+.login-input {
+  width: 100%;
+  height: 48px;
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+  font-family: "Lato-Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
+  outline: none;
+  padding: 0 8px;
+}
+
+.login-input::placeholder {
+  color: #000;
+  opacity: 0.49;
+}
+
+.overlap-group {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  background-color: #f0f3f9a6;
+  border-radius: 10px;
+  border: 1px solid #1b378c;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.view-password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #1c398d78;
+  background: #fff;
+  margin-left: 8px;
+  cursor: pointer;
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  padding: 0;
+}
+.frame {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  background: #eaf3fc;
+  overflow: hidden;
+}
+
+.frame .frame-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+.frame .div {
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+  min-height: 100vh;
+  /* background: transparent; */
+  position: relative;
+}
+
+.frame .div-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  min-height: 100vh;
+  align-items: stretch;
+  justify-content: stretch;
+  padding: 0;
+  position: relative;
+}
+
+.frame .background {
+  width: 50vw;
+  min-width: 400px;
+  background: linear-gradient(135deg, #46a9ff 0%, #1c398d 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.frame .ellipse {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  top: 10%;
+  left: -10%;
+  background-color: #05b8ff12;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.frame .rectangle {
+  display: none;
+}
+
+.frame .welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  min-width: 400px;
+  min-height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.frame .text-wrapper {
+  font-family: "IBM Plex Sans JP-SemiBold", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0;
+  text-shadow: 0 2px 8px #1c398d55;
+}
+
+.frame .p {
+  font-family: "IBM Plex Sans JP-SemiBold", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 8px #1c398d55;
+}
+
+.frame .group {
+  display: none;
+}
+
+.frame .footer {
+  display: flex;
+  width: 100vw;
+  min-height: 53px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 17px 0;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  font-family: "IBM Plex Sans JP-Regular", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #7a7a7a;
+  box-shadow: 0 -2px 8px 0 rgba(31,38,135,0.04);
+}
+
+.frame .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -3.50px;
+  margin-bottom: -1.50px;
+  font-family: "IBM Plex Sans JP-Regular", Helvetica;
+  font-weight: 400;
+  color: #7a7a7a;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .button {
+  all: unset;
+  box-sizing: border-box;
+  width: 350px;
+  height: 48px;
+  margin: 16px 0 0 0;
+  position: static;
+  display: block;
+}
+
+.frame .overlap-group {
+  position: relative;
+  width: 100%;
+  height: 48px;
+  background-color: #f0f3f9a6;
+  border-radius: 10px;
+  border: 1px solid #1b378c;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.frame .text-wrapper-3 {
+  opacity: 0.49;
+  font-family: "Lato-Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #000000;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.frame .overlap-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  width: 350px;
+  height: 48px;
+  margin: 16px 0 0 0;
+  position: static;
+  display: block;
+}
+
+.frame .text-wrapper-4 {
+  opacity: 0.49;
+  font-family: "Lato-Light", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #000000;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.frame .view-password {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #1c398d78;
+  background: #fff;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.frame .eye-off {
+  width: 24px;
+  height: 24px;
+}
+
+.frame .login {
+  width: 263.99px;
+  height: 62px;
+  margin: 32px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: static;
+}
+
+.frame .overlap {
+  width: 100%;
+  height: 48px;
+  background-color: #5cb3ff;
+  border-radius: 24px;
+  box-shadow: 0px 4px 11.2px 3px #3569ff5c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.frame .overlap:hover {
+  background-color: #1c398d;
+}
+
+.top-shine {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+  height: 60%;
+  pointer-events: none;
+  z-index: 2;
+  background: radial-gradient(ellipse at 50% 0%, rgba(117, 241, 255, 0.921) 0%, rgba(255, 255, 255, 0.15) 60%, rgba(255,255,255,0) 100%);
+  filter: blur(70px);
+}
+
+.frame .text-wrapper-5 {
+  font-family: "IBM Plex Sans JP-Medium", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.frame .div-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  margin: 16px 0 0 0;
+  position: static;
+}
+
+.forgot-password {
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+}
+.frame .rectangle-2 {
+  width: 20px;
+  height: 20px;
+  background-color: #dee6f6;
+  border: 1px solid #1c398d8c;
+  border-radius: 4px;
+}
+
+.frame .text-wrapper-6 {
+  font-family: "IBM Plex Sans JP-Regular", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #1b378c;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.frame .forgot-password {
+  font-family: "IBM Plex Sans JP-Regular", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #1b378c;
+  font-size: 1rem;
+  text-align: right;
+  text-decoration: underline;
+  margin-left: auto;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.frame .ioi-logo {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.frame .text-wrapper-7 {
+  font-family: "Lato-Regular", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #1c398d;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.remember-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.remember-checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: #1b378c;
+  margin-right: 4px;
+}
+.footer{
+  display: flex;
+  width: 100vw;
+  min-height: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 17px 0;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  font-family: "IBM Plex Sans JP-Regular", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #7a7a7a;
+}
+
+

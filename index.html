@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="frame">
+      <div class="frame-wrapper">
+        <div class="div">
+          
+            <div class="background">
+            <div class="top-shine"></div>
+              <div class="ellipse"></div>
+              <!-- <div class="rectangle"></div> -->
+            </div>
+            <div class="welcome">
+              <div class="text-wrapper">Welcome back</div>
+              <p class="p">Log in to access your dashboard</p>
+            </div>
+            <div class="group">
+              <footer class="footer">
+                <p class="text-wrapper-2">
+                  © 2025 IOI Plantation Sdn Bhd. All Rights Reserved. Developed by DH DigiLab
+                </p>
+              </footer>
+            </div>
+          </div>
+          <div class="login-form">
+            <img class="ioi-logo" src="ioi_logo (1).png" />
+            <div class="login-panel">
+              <p class="text-wrapper-7">Log in with your account.</p>
+              <div class="input-group">
+                <div class="overlap-group">
+                  <input class="login-input" type="text" placeholder="Enter your username" autocomplete="username" />
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="overlap-group" style="position:relative;">
+                  <input class="login-input" id="password-input" type="password" placeholder="Password" autocomplete="current-password" />
+                  <button type="button" class="view-password" id="toggle-password" tabindex="-1">
+                    <img class="eye-off" id="eye-icon" src="interface.png" alt="Show password" />
+                  </button>
+                </div>
+              </div>
+              <div class="div-3">
+                <label class="remember-label">
+                  <input type="checkbox" class="remember-checkbox" />
+                  <span class="text-wrapper-6">Remember me</span>
+                </label>
+                <div class="forgot-password">Forgot Password?</div>
+              </div>
+              <div class="login">
+                <div class="overlap"><div class="text-wrapper-5">Login</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div class="footer">
+          © 2025 IOI Plantation Sdn Bhd. All Rights Reserved. Developed by DH DigiLab
+        </div>
+    <script>
+      // Password visibility toggle
+      const togglePassword = document.getElementById('toggle-password');
+      const passwordInput = document.getElementById('password-input');
+      const eyeIcon = document.getElementById('eye-icon');
+      if (togglePassword && passwordInput && eyeIcon) {
+        togglePassword.addEventListener('click', function() {
+          const isPassword = passwordInput.type === 'password';
+          passwordInput.type = isPassword ? 'text' : 'password';
+          eyeIcon.src = isPassword ? 'hide.png' : 'interface.png';
+          eyeIcon.alt = isPassword ? 'Hide password' : 'Show password';
+        });
+      }
+    </script>
+  </body>
+</html>
